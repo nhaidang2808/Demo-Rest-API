@@ -11,7 +11,7 @@ exports.create = (req, res) => {
 
     // Create a Note
     const note = new Note({
-        title: req.body.title || "Untitled Note", 
+        name: req.body.name || "Untitled Note", 
         content: req.body.content
     });
 
